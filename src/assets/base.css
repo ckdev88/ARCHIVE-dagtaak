@@ -1,0 +1,143 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+	--c-white: #ffffff;
+	--c-white-soft: #f8f8f8;
+	--c-white-mute: #f2f2f2;
+
+	--c-black: #181818;
+	--c-black-soft: #222222;
+	--c-black-mute: #282828;
+
+	--c-indigo: #2c3e50;
+
+	--c-divider-light-1: rgba(60, 60, 60, 0.29);
+	--c-divider-light-2: rgba(60, 60, 60, 0.12);
+	--c-divider-dark-1: rgba(84, 84, 84, 0.65);
+	--c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+	--c-text-light-1: var(--c-indigo);
+	--c-text-light-2: rgba(60, 60, 60, 0.66);
+	--c-text-dark-1: var(--c-white);
+	--c-text-dark-2: rgba(255, 255, 255, 0.9);
+}
+
+/* semantic color variables for this project */
+:root {
+	--color-background: var(--c-black);
+	--color-background-soft: var(--c-black-soft);
+	--color-background-mute: var(--c-black-mute);
+
+	--color-border: var(--c-divider-light-2);
+	--color-border-hover: var(--c-divider-light-1);
+
+	--color-heading: var(--c-text-light-1);
+	--color-text: var(--c-text-light-1);
+
+	--section-gap: 160px;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-background: var(--c-black);
+		--color-background-soft: var(--c-black-soft);
+		--color-background-mute: var(--c-black-mute);
+
+		--color-border: var(--c-divider-dark-2);
+		--color-border-hover: var(--c-divider-dark-1);
+
+		--color-heading: var(--c-text-dark-1);
+		--color-text: var(--c-text-dark-2);
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	position: relative;
+}
+
+body {
+	min-height: 100vh;
+	color: var(--color-text);
+	background: var(--color-background);
+	transition: color 0.5s, background-color 0.5s;
+	line-height: 1.6;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	font-size: 15px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+	background-color: var(--color-background);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 13px;
+}
+
+body {
+	background-color: var(--bg-color);
+}
+h3::first-letter {
+	text-transform: uppercase;
+}
+
+#wrapper {
+	height: 100%;
+}
+
+.container {
+	/* max-width: 1000px; */
+	display: flex;
+}
+
+aside,
+main {
+	clear: both;
+}
+
+main {
+	display: block;
+	margin-left: 14rem;
+}
+
+main {
+	color: var(--c-text-dark-2);
+	position: relative;
+}
+dt {
+	float: left;
+	width: 13rem;
+	text-align: left;
+	margin-left: 0;
+}
+dd:after {
+	clear: both;
+}
+.clear {
+	clear: both;
+}
+
+ul.nostyle {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+input[type='number'] {
+	width: 3em;
+	padding: 0 0 0 0.55em;
+	font-weight: bold;
+}
