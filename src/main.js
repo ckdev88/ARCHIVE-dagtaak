@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	const current = new Date()
 	const localeCode = 'nl-NL'
 
-	document.getElementById('toggleNav').onclick = function () {
+	document.getElementById('toggleNav').onclick = function() {
 		const aside = document.getElementById('aside')
 		if (aside.classList.contains('hidden')) {
 			aside.classList.remove('hidden')
@@ -19,15 +19,15 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 
 	/*document.getElementById('toggleNav').onclick = function () {
-    // Get the DOM reference
-    var asideId = document.getElementById("aside");
-    // Toggle
-    if(asideId.style.display == "none"){
-      asideId.style.display = "block";
-    }
-    else{
-      asideId.style.display = "none";
-    }
+	// Get the DOM reference
+	var asideId = document.getElementById("aside");
+	// Toggle
+	if(asideId.style.display == "none"){
+	  asideId.style.display = "block";
+	}
+	else{
+	  asideId.style.display = "none";
+	}
   }*/
 
 	function currentDate(ret = 0) {
@@ -70,8 +70,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			var ele = document.getElementById('workout-' + dateOutput)
 			ele.classList.add('vandaag')
 		}
-		// ret
-		//
 
 		if (ret === 1) {
 			return dateOutput
@@ -82,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	function workoutArchive() {
 		var breakit
 
-		document.querySelectorAll('.workout-dag').forEach(function (i) {
+		document.querySelectorAll('.workout-dag').forEach(function(i) {
 			if (breakit === undefined) {
 				i.classList.add('archive')
 				if (i.classList.contains('vandaag')) {
@@ -95,17 +93,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	workoutArchive()
 
 	function scrollToHash(hashName) {
-		setTimeout(function () {
+		setTimeout(function() {
 			location.hash = '#' + hashName
 			console.log('scrolled')
 		}, 0)
 	}
 
 	// function archiefTonenToggle(){
-	document.getElementById('archiefTonenToggle').onclick = function () {
+	document.getElementById('archiefTonenToggle').onclick = function() {
 		var toon = 0
 		var verberg = 0
-		document.querySelectorAll('.archive').forEach(function (i) {
+		document.querySelectorAll('.archive').forEach(function(i) {
 			if (i.classList.contains('show')) {
 				i.classList.remove('show')
 				verberg = 1
@@ -136,7 +134,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		})
 
 		document.getElementById('klok').innerText = current
-		let time = setTimeout(function () {
+		let time = setTimeout(function() {
 			currentTime(current)
 		}, 1000)
 
@@ -182,7 +180,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		})
 
 		document.getElementById('klok').innerText = current
-		let time = setTimeout(function () {
+		let time = setTimeout(function() {
 			currentTimeHighlight(current)
 		}, 60000)
 

@@ -16,24 +16,9 @@ export default {
 					tekst: 'workout',
 				},
 				{
-					id: 9,
-					link: '#unsorted-notes',
-					tekst: 'unsorted-notes',
-				},
-				{
 					id: 10,
 					link: '#links',
 					tekst: 'links',
-				},
-				{
-					id: 11,
-					link: '#eigen-algo',
-					tekst: 'eigen-algo',
-				},
-				{
-					id: 13,
-					link: '#referenties',
-					tekst: 'referenties',
 				},
 				{
 					id: 14,
