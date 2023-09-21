@@ -14,8 +14,8 @@ export default {
 			<span v-else>{{ item.wat }}</span>
 		</h4>
 		<div class="specs">
-			<div class="spec" v-for="(item, key) in item.specs">
-				<li v-key=key>{{ item.spec }}</li>
+			<div class="spec" v-for="(item) in item.specs">
+				<li>{{ item.spec }}</li>
 			</div>
 		</div>
 	</div>

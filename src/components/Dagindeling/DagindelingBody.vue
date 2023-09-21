@@ -8,7 +8,7 @@ export default {
 				{
 					id: 1,
 					type: 'Task',
-					wat: 'Workout / Have to',
+					wat: 'Workout',
 					specs: [
 						{ spec: 'BANG / Squaredance / Yeoh / Split / Shadow box' },
 						{ spec: 'Go walking' },
