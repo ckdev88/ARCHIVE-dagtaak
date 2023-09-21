@@ -1076,7 +1076,7 @@ export default {
 				},
 				{
 					datum: '20221201',
-					dag: 'donderdag',
+					dag: 'donderdag', // TODO: day should be dynamically derived from date int
 					beschrijving: 'Schouders & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1123,11 +1123,58 @@ export default {
 						{ oefening: 'hangen', reps: 1, sets: 2, gewicht: 80 },
 					],
 				},
+				{
+					datum: '20221226',
+					dag: 'maandag',
+					beschrijving: 'Biceps & rug & benen',
+					oefeningen: [
+						{ oefening: 'onderrug', reps: 50, sets: 2 },
+						{ oefening: 'schouders simpel', reps: 50, sets: 2 },
+						{ oefening: 'nek simpel', reps: 50, sets: 2 },
+						{ oefening: 'hangen', reps: 1, sets: 2, gewicht: 80 },
+					],
+				},
+				{
+					datum: '20230921',
+					dag: 'donderdag',
+					beschrijving: '',
+					oefeningen: [
+						{
+							oefening: '', // TODO: on current day, select/option field, day passed = readonly
+							reps: 0,
+							sets: 0
+						},//' TODO: dynamically inserted excersize from selection of predetermined options'
+						{
+							oefening: '', // TODO: on current day, always have an extra empty line to easily submit
+							reps: 0,
+							sets: 0
+						}
+					]
+				},
+				{
+					datum: '20230923',
+					dag: 'zaterdag',
+					beschrijving: '',
+					oefeningen: [
+						{
+							oefening: '', // TODO: on current day, select/option field, day passed = readonly
+							reps: 0,
+							sets: 0
+						},//' TODO: dynamically inserted excersize from selection of predetermined options'
+						{
+							oefening: '', // TODO: on current day, always have an extra empty line to easily submit
+							reps: 0,
+							sets: 0
+						}
+					]
+				}
 			],
 		}
 	},
 }
 </script>
+<!-- TODO: so this whole dataset will be stored in a local database... sqlite? -->
+
 <template>
 	<a href="#workout" id="archiefTonenToggle">Archief tonen / verbergen</a>
 	<div id="workout-grid">
@@ -1135,5 +1182,4 @@ export default {
 		<WorkoutBodyItems v-for="datum of itemList" :item="datum" :key="datum" />
 	</div>
 	<div style="display: none"></div>
-	<a href="#voorbereiding">Terug naar voorbereiding</a>
 </template>
