@@ -12,8 +12,9 @@ export default {
 					specs: [
 						{ spec: 'BANG / Squaredance / Yeoh / Split / Shadow box' },
 						{ spec: 'Go walking' },
-						{ spec: 'Learn a foreign language' }
-					]
+						{ spec: 'Learn a foreign language' },
+						{ spec: 'Practice type speed / coordination' },
+					],
 				},
 				{
 					id: 2,
@@ -27,7 +28,7 @@ export default {
 						{ spec: 'Calf raise' },
 						{ spec: 'Shoulder' },
 						{ spec: 'Pull up' },
-						{ spec: 'WHM' }
+						{ spec: 'WHM' },
 					],
 				},
 			],
