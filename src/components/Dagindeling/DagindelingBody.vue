@@ -14,6 +14,7 @@ export default {
 						{ spec: 'Go walking' },
 						{ spec: 'Learn a foreign language' },
 						{ spec: 'Practice type speed / coordination' },
+						{ spec: 'Read news, max 1x' }
 					],
 				},
 				{
