@@ -4,6 +4,7 @@ import Dagindeling from './components/Dagindeling.vue'
 import Workout from './components/Workout.vue'
 // import MainItem from './components/MainItem.vue'
 import Coding from './components/Sections/Coding.vue'
+import Links from './components/Links.vue'
 // import DocumentationIcon from './components/icons/IconDocumentation.vue'
 // import ToolingIcon from './components/icons/IconTooling.vue'
 // import EcosystemIcon from './components/icons/IconEcosystem.vue'
@@ -16,4 +17,5 @@ import Coding from './components/Sections/Coding.vue'
 	<Dagindeling />
 	<Coding />
 	<Workout />
+	<Links />
 </template>

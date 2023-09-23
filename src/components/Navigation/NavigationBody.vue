@@ -1,5 +1,6 @@
 <script>
 import NavigationBodyItems from './NavigationBodyItem.vue'
+// TODO: seperate data below from view model
 export default {
 	components: { NavigationBodyItems },
 	data() {
