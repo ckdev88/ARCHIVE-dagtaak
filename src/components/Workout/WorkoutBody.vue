@@ -8,7 +8,7 @@ export default {
 			itemList: [
 				{
 					datum: 20220808,
-					dag: 'maandag',
+					
 					oefeningen: [
 						{ oefening: 'onderrug', sets: 2, reps: 50 },
 						{ oefening: 'schouders simpel', sets: 4, reps: 50 },
@@ -18,7 +18,7 @@ export default {
 				},
 				{
 					datum: 20220809,
-					dag: 'dinsdag',
+					
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
 						{
@@ -32,7 +32,7 @@ export default {
 				},
 				{
 					datum: 20220810,
-					dag: 'woensdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -43,7 +43,7 @@ export default {
 				},
 				{
 					datum: 20220811,
-					dag: 'donderdag',
+					
 					beschrijving: 'biceps',
 					oefeningen: [
 						{ oefening: 'grips', reps: 100, sets: 4 },
@@ -52,7 +52,7 @@ export default {
 				},
 				{
 					datum: 20220812,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -64,7 +64,7 @@ export default {
 				},
 				{
 					datum: 20220813,
-					dag: 'zaterdag',
+					
 					beschrijving: 'biceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -74,7 +74,7 @@ export default {
 				},
 				{
 					datum: 20220814,
-					dag: 'zondag',
+					
 					beschrijving: 'abdominalis & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -85,7 +85,7 @@ export default {
 				},
 				{
 					datum: 20220815,
-					dag: 'maandag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -102,7 +102,7 @@ export default {
 				},
 				{
 					datum: 20220816,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -126,7 +126,7 @@ export default {
 				},
 				{
 					datum: 20220817,
-					dag: 'woensdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -156,7 +156,7 @@ export default {
 				},
 				{
 					datum: 20220818,
-					dag: 'donderdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -167,7 +167,7 @@ export default {
 				},
 				{
 					datum: 20220819,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -184,7 +184,7 @@ export default {
 				},
 				{
 					datum: 20220819 - 2,
-					dag: 'vrijdag (2)',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -208,7 +208,7 @@ export default {
 				},
 				{
 					datum: 20220820,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -219,12 +219,12 @@ export default {
 				},
 				{
 					datum: 20220821,
-					dag: 'zondag',
+					
 					beschrijving: 'vrij',
 				},
 				{
 					datum: 20220822,
-					dag: 'maandag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -254,7 +254,7 @@ export default {
 				},
 				{
 					datum: 20220823,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -271,7 +271,7 @@ export default {
 				},
 				{
 					datum: 20220823 - 2,
-					dag: 'dinsdag (2)',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -287,7 +287,7 @@ export default {
 				},
 				{
 					datum: 20220823 - 3,
-					dag: 'dinsdag (3)',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -299,7 +299,7 @@ export default {
 				},
 				{
 					datum: 20220824,
-					dag: 'woensdag',
+					
 					beschrijving: 'Concentratie',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -309,7 +309,7 @@ export default {
 				},
 				{
 					datum: 20220825,
-					dag: 'donderdag',
+					
 					beschrijving: 'Concentratie',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -319,7 +319,7 @@ export default {
 				},
 				{
 					datum: 20220826,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -330,7 +330,7 @@ export default {
 				},
 				{
 					datum: 20220827,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -348,7 +348,7 @@ export default {
 				},
 				{
 					datum: 20220828,
-					dag: 'zondag',
+					
 					beschrijving: 'Concentratie',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -358,7 +358,7 @@ export default {
 				},
 				{
 					datum: 20220828 - 2,
-					dag: 'zondag (2)',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -381,7 +381,7 @@ export default {
 				},
 				{
 					datum: 20220829,
-					dag: 'maandag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -398,7 +398,7 @@ export default {
 				},
 				{
 					datum: 20220829 - 2,
-					dag: 'maandag (2)',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -410,7 +410,7 @@ export default {
 				},
 				{
 					datum: 20220930,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Concentratie',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -420,7 +420,7 @@ export default {
 				},
 				{
 					datum: 20220831,
-					dag: 'woensdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -444,7 +444,7 @@ export default {
 				},
 				{
 					datum: 20220901,
-					dag: 'donderdag',
+					
 					beschrijving: 'Concentratie',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -454,7 +454,7 @@ export default {
 				},
 				{
 					datum: 20220902,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -477,7 +477,7 @@ export default {
 				},
 				{
 					datum: 20220902 - 2,
-					dag: 'vrijdag (2)',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -489,7 +489,7 @@ export default {
 				},
 				{
 					datum: 20220903,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -501,7 +501,7 @@ export default {
 				},
 				{
 					datum: 20220904,
-					dag: 'zondag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -521,7 +521,7 @@ export default {
 				},
 				{
 					datum: 20220905,
-					dag: 'maandag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -538,7 +538,7 @@ export default {
 				},
 				{
 					datum: 20220906,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -568,7 +568,7 @@ export default {
 				},
 				{
 					datum: 20220907,
-					dag: 'woensdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -580,7 +580,7 @@ export default {
 				},
 				{
 					datum: 20220908,
-					dag: 'donderdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -605,7 +605,7 @@ export default {
 				},
 				{
 					datum: 20220909,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -644,7 +644,7 @@ export default {
 				},
 				{
 					datum: 20220910,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -656,12 +656,12 @@ export default {
 				},
 				{
 					datum: 20220911,
-					dag: 'zondag',
+					
 					beschrijving: 'vrij-ziek',
 				},
 				{
 					datum: 20220912,
-					dag: 'maandag',
+					
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -672,22 +672,22 @@ export default {
 				},
 				{
 					datum: 20220913,
-					dag: 'dinsdag',
+					
 					beschrijving: 'vrij-ziek',
 				},
 				{
 					datum: 20220914,
-					dag: 'woensdag',
+					
 					beschrijving: 'vrij-ziek',
 				},
 				{
 					datum: 20220915,
-					dag: 'donderdag',
+					
 					beschrijving: 'vrij-ziek',
 				},
 				{
 					datum: 20220916,
-					dag: 'vrijdag',
+					
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -696,7 +696,7 @@ export default {
 				},
 				{
 					datum: 20220917,
-					dag: 'zaterdag',
+					
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -706,7 +706,7 @@ export default {
 				},
 				{
 					datum: 20220918,
-					dag: 'zondag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 30 },
@@ -732,7 +732,7 @@ export default {
 				},
 				{
 					datum: 20220919,
-					dag: 'maandag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -772,7 +772,7 @@ export default {
 				},
 				{
 					datum: 20220920,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -784,7 +784,7 @@ export default {
 				},
 				{
 					datum: 20220921,
-					dag: 'woensdag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -803,7 +803,7 @@ export default {
 				},
 				{
 					datum: 20220922,
-					dag: 'donderdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -817,7 +817,7 @@ export default {
 				},
 				{
 					datum: 20220923,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -835,7 +835,7 @@ export default {
 				},
 				{
 					datum: 20220924,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -856,7 +856,7 @@ export default {
 				},
 				{
 					datum: 20220925,
-					dag: 'zondag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -868,7 +868,7 @@ export default {
 				},
 				{
 					datum: 20220926,
-					dag: 'maandag',
+					
 					beschrijving: 'Benen',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -881,7 +881,7 @@ export default {
 				},
 				{
 					datum: 20220927,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -893,7 +893,7 @@ export default {
 				},
 				{
 					datum: 20220928,
-					dag: 'woensdag',
+					
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -907,7 +907,7 @@ export default {
 				},
 				{
 					datum: 20220929,
-					dag: 'donderdag',
+					
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -928,7 +928,7 @@ export default {
 				},
 				{
 					datum: 20220930,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -940,7 +940,7 @@ export default {
 				},
 				{
 					datum: 20221014,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -955,7 +955,7 @@ export default {
 				},
 				{
 					datum: 20221015,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Rug, borst & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -972,7 +972,7 @@ export default {
 				},
 				{
 					datum: 20221016,
-					dag: 'zondag',
+					
 					beschrijving: 'Borst & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -982,7 +982,7 @@ export default {
 				},
 				{
 					datum: 20221017,
-					dag: 'maandag',
+					
 					beschrijving: 'Borst & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -994,7 +994,7 @@ export default {
 				},
 				{
 					datum: 20221018,
-					dag: 'dinsdag',
+					
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
 						{ oefening: 'WHM', minuten: 25 },
@@ -1009,7 +1009,7 @@ export default {
 				},
 				{
 					datum: 20221103,
-					dag: 'donderdag',
+					
 					beschrijving: 'Biceps',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1022,7 +1022,7 @@ export default {
 				},
 				{
 					datum: 20221104,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Abs',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1034,7 +1034,7 @@ export default {
 				},
 				{
 					datum: 20221105,
-					dag: 'zaterdag',
+					
 					beschrijving: 'Borst',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1046,7 +1046,7 @@ export default {
 				},
 				{
 					datum: 20221106,
-					dag: 'zondag',
+					
 					beschrijving: 'Schouders & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1077,7 +1077,7 @@ export default {
 				},
 				{
 					datum: 20221201,
-					dag: 'donderdag', // TODO: day should be dynamically derived from date int
+					
 					beschrijving: 'Schouders & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1103,7 +1103,7 @@ export default {
 				},
 				{
 					datum: 20221202,
-					dag: 'vrijdag',
+					
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1115,7 +1115,7 @@ export default {
 				},
 				{
 					datum: 20221226,
-					dag: 'maandag',
+					
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1126,7 +1126,7 @@ export default {
 				},
 				{
 					datum: 20221226,
-					dag: 'maandag',
+					
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -1137,7 +1137,7 @@ export default {
 				},
 				{
 					datum: 20230925,
-					dag: 'maandag',
+					
 					beschrijving: '',
 					oefeningen: [
 						{
@@ -1154,7 +1154,7 @@ export default {
 				},
 				{
 					datum: 20230926,
-					dag: 'dinsdag',
+					
 					beschrijving: '',
 					oefeningen: [
 						{

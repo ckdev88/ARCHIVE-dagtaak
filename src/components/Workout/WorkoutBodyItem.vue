@@ -24,7 +24,7 @@ export default {
 <template >
 	<div :class="getWorkoutClassList(getCurrentDateInt(), item.datum)" :id="'workout-' + item.datum">
 		<h3>
-			{{ item.dag }} <span class="datum">{{ item.datum }}</span><span v-if="item.beschrijving">: {{
+			<span class="datum">{{ item.datum }}</span><span v-if="item.beschrijving">: {{
 				item.beschrijving
 			}}</span><a :name="'workout-' + item.datum"></a>
 		</h3>
