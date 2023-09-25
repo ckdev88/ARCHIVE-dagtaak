@@ -1,12 +1,13 @@
 <script>
 import WorkoutBodyItems from './WorkoutBodyItem.vue'
+import * as script from '../../../src/main.js'
 export default {
 	components: { WorkoutBodyItems },
 	data() {
 		return {
 			itemList: [
 				{
-					datum: '20220808',
+					datum: 20220808,
 					dag: 'maandag',
 					oefeningen: [
 						{ oefening: 'onderrug', sets: 2, reps: 50 },
@@ -16,7 +17,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220809',
+					datum: 20220809,
 					dag: 'dinsdag',
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -30,7 +31,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220810',
+					datum: 20220810,
 					dag: 'woensdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -41,7 +42,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220811',
+					datum: 20220811,
 					dag: 'donderdag',
 					beschrijving: 'biceps',
 					oefeningen: [
@@ -50,7 +51,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220812',
+					datum: 20220812,
 					dag: 'vrijdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -62,7 +63,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220813',
+					datum: 20220813,
 					dag: 'zaterdag',
 					beschrijving: 'biceps',
 					oefeningen: [
@@ -72,7 +73,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220814',
+					datum: 20220814,
 					dag: 'zondag',
 					beschrijving: 'abdominalis & flexibiliteit',
 					oefeningen: [
@@ -83,7 +84,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220815',
+					datum: 20220815,
 					dag: 'maandag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -100,7 +101,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220816',
+					datum: 20220816,
 					dag: 'dinsdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -124,7 +125,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220817',
+					datum: 20220817,
 					dag: 'woensdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -154,7 +155,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220818',
+					datum: 20220818,
 					dag: 'donderdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -165,7 +166,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220819',
+					datum: 20220819,
 					dag: 'vrijdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -182,7 +183,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220819-2',
+					datum: 20220819 - 2,
 					dag: 'vrijdag (2)',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -206,7 +207,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220820',
+					datum: 20220820,
 					dag: 'zaterdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -217,12 +218,12 @@ export default {
 					],
 				},
 				{
-					datum: '20220821',
+					datum: 20220821,
 					dag: 'zondag',
 					beschrijving: 'vrij',
 				},
 				{
-					datum: '20220822',
+					datum: 20220822,
 					dag: 'maandag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -252,7 +253,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220823',
+					datum: 20220823,
 					dag: 'dinsdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -269,7 +270,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220823-2',
+					datum: 20220823 - 2,
 					dag: 'dinsdag (2)',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -285,7 +286,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220823-3',
+					datum: 20220823 - 3,
 					dag: 'dinsdag (3)',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -297,7 +298,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220824',
+					datum: 20220824,
 					dag: 'woensdag',
 					beschrijving: 'Concentratie',
 					oefeningen: [
@@ -307,7 +308,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220825',
+					datum: 20220825,
 					dag: 'donderdag',
 					beschrijving: 'Concentratie',
 					oefeningen: [
@@ -317,7 +318,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220826',
+					datum: 20220826,
 					dag: 'vrijdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -328,7 +329,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220827',
+					datum: 20220827,
 					dag: 'zaterdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -346,7 +347,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220828',
+					datum: 20220828,
 					dag: 'zondag',
 					beschrijving: 'Concentratie',
 					oefeningen: [
@@ -356,7 +357,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220828-2',
+					datum: 20220828 - 2,
 					dag: 'zondag (2)',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -379,7 +380,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220829',
+					datum: 20220829,
 					dag: 'maandag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -396,7 +397,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220829-2',
+					datum: 20220829 - 2,
 					dag: 'maandag (2)',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -408,7 +409,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220930',
+					datum: 20220930,
 					dag: 'dinsdag',
 					beschrijving: 'Concentratie',
 					oefeningen: [
@@ -418,7 +419,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220831',
+					datum: 20220831,
 					dag: 'woensdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -442,7 +443,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220901',
+					datum: 20220901,
 					dag: 'donderdag',
 					beschrijving: 'Concentratie',
 					oefeningen: [
@@ -452,7 +453,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220902',
+					datum: 20220902,
 					dag: 'vrijdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -475,7 +476,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220902-2',
+					datum: 20220902 - 2,
 					dag: 'vrijdag (2)',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -487,7 +488,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220903',
+					datum: 20220903,
 					dag: 'zaterdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -499,7 +500,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220904',
+					datum: 20220904,
 					dag: 'zondag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -519,7 +520,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220905',
+					datum: 20220905,
 					dag: 'maandag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -536,7 +537,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220906',
+					datum: 20220906,
 					dag: 'dinsdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -566,7 +567,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220907',
+					datum: 20220907,
 					dag: 'woensdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -578,7 +579,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220908',
+					datum: 20220908,
 					dag: 'donderdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -603,7 +604,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220909',
+					datum: 20220909,
 					dag: 'vrijdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -642,7 +643,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220910',
+					datum: 20220910,
 					dag: 'zaterdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -654,12 +655,12 @@ export default {
 					],
 				},
 				{
-					datum: '20220911',
+					datum: 20220911,
 					dag: 'zondag',
 					beschrijving: 'vrij-ziek',
 				},
 				{
-					datum: '20220912',
+					datum: 20220912,
 					dag: 'maandag',
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
@@ -670,22 +671,22 @@ export default {
 					],
 				},
 				{
-					datum: '20220913',
+					datum: 20220913,
 					dag: 'dinsdag',
 					beschrijving: 'vrij-ziek',
 				},
 				{
-					datum: '20220914',
+					datum: 20220914,
 					dag: 'woensdag',
 					beschrijving: 'vrij-ziek',
 				},
 				{
-					datum: '20220915',
+					datum: 20220915,
 					dag: 'donderdag',
 					beschrijving: 'vrij-ziek',
 				},
 				{
-					datum: '20220916',
+					datum: 20220916,
 					dag: 'vrijdag',
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
@@ -694,7 +695,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220917',
+					datum: 20220917,
 					dag: 'zaterdag',
 					beschrijving: 'zeer licht - ziek',
 					oefeningen: [
@@ -704,7 +705,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220918',
+					datum: 20220918,
 					dag: 'zondag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -730,7 +731,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220919',
+					datum: 20220919,
 					dag: 'maandag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -770,7 +771,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220920',
+					datum: 20220920,
 					dag: 'dinsdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -782,7 +783,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220921',
+					datum: 20220921,
 					dag: 'woensdag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -801,7 +802,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220922',
+					datum: 20220922,
 					dag: 'donderdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -815,7 +816,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220923',
+					datum: 20220923,
 					dag: 'vrijdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -833,7 +834,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220924',
+					datum: 20220924,
 					dag: 'zaterdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -854,7 +855,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220925',
+					datum: 20220925,
 					dag: 'zondag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -866,7 +867,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220926',
+					datum: 20220926,
 					dag: 'maandag',
 					beschrijving: 'Benen',
 					oefeningen: [
@@ -879,7 +880,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220927',
+					datum: 20220927,
 					dag: 'dinsdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -891,7 +892,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220928',
+					datum: 20220928,
 					dag: 'woensdag',
 					beschrijving: 'Borst, schouders & triceps',
 					oefeningen: [
@@ -905,7 +906,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220929',
+					datum: 20220929,
 					dag: 'donderdag',
 					beschrijving: 'Biceps & rug',
 					oefeningen: [
@@ -926,7 +927,7 @@ export default {
 					],
 				},
 				{
-					datum: '20220930',
+					datum: 20220930,
 					dag: 'vrijdag',
 					beschrijving: 'Buik & flexibiliteit',
 					oefeningen: [
@@ -938,7 +939,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221014',
+					datum: 20221014,
 					dag: 'vrijdag',
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
@@ -953,7 +954,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221015',
+					datum: 20221015,
 					dag: 'zaterdag',
 					beschrijving: 'Rug, borst & benen',
 					oefeningen: [
@@ -970,7 +971,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221016',
+					datum: 20221016,
 					dag: 'zondag',
 					beschrijving: 'Borst & benen',
 					oefeningen: [
@@ -980,7 +981,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221017',
+					datum: 20221017,
 					dag: 'maandag',
 					beschrijving: 'Borst & benen',
 					oefeningen: [
@@ -992,7 +993,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221018',
+					datum: 20221018,
 					dag: 'dinsdag',
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
@@ -1007,7 +1008,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221103',
+					datum: 20221103,
 					dag: 'donderdag',
 					beschrijving: 'Biceps',
 					oefeningen: [
@@ -1020,7 +1021,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221104',
+					datum: 20221104,
 					dag: 'vrijdag',
 					beschrijving: 'Abs',
 					oefeningen: [
@@ -1032,7 +1033,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221105',
+					datum: 20221105,
 					dag: 'zaterdag',
 					beschrijving: 'Borst',
 					oefeningen: [
@@ -1044,7 +1045,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221106',
+					datum: 20221106,
 					dag: 'zondag',
 					beschrijving: 'Schouders & benen',
 					oefeningen: [
@@ -1075,7 +1076,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221201',
+					datum: 20221201,
 					dag: 'donderdag', // TODO: day should be dynamically derived from date int
 					beschrijving: 'Schouders & benen',
 					oefeningen: [
@@ -1101,7 +1102,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221202',
+					datum: 20221202,
 					dag: 'vrijdag',
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
@@ -1113,7 +1114,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221226',
+					datum: 20221226,
 					dag: 'maandag',
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
@@ -1124,7 +1125,7 @@ export default {
 					],
 				},
 				{
-					datum: '20221226',
+					datum: 20221226,
 					dag: 'maandag',
 					beschrijving: 'Biceps & rug & benen',
 					oefeningen: [
@@ -1135,40 +1136,50 @@ export default {
 					],
 				},
 				{
-					datum: '20230921',
-					dag: 'donderdag',
+					datum: 20230925,
+					dag: 'maandag',
 					beschrijving: '',
 					oefeningen: [
 						{
 							oefening: '', // TODO: on current day, select/option field, day passed = readonly
 							reps: 0,
-							sets: 0
-						},//' TODO: dynamically inserted excersize from selection of predetermined options'
+							sets: 0,
+						}, //" TODO: dynamically inserted excersize from selection of predetermined options"
 						{
 							oefening: '', // TODO: on current day, always have an extra empty line to easily submit
 							reps: 0,
-							sets: 0
-						}
-					]
+							sets: 0,
+						},
+					],
 				},
 				{
-					datum: '20230923',
-					dag: 'zaterdag',
+					datum: 20230926,
+					dag: 'dinsdag',
 					beschrijving: '',
 					oefeningen: [
 						{
 							oefening: '', // TODO: on current day, select/option field, day passed = readonly
 							reps: 0,
-							sets: 0
-						},//' TODO: dynamically inserted excersize from selection of predetermined options'
+							sets: 0,
+						}, //' TODO: dynamically inserted excersize from selection of predetermined options'
 						{
 							oefening: '', // TODO: on current day, always have an extra empty line to easily submit
 							reps: 0,
-							sets: 0
-						}
-					]
-				}
+							sets: 0,
+						},
+					],
+				},
 			],
+			showWorkoutArchive: true,
+		}
+	},
+	methods: {
+		toggleArchive() {
+			this.showWorkoutArchive = !this.showWorkoutArchive
+		},
+		getWorkoutGridClass(showWorkoutArchive){
+			if(showWorkoutArchive)return 'showArchive';
+			return 'hideArchive';
 		}
 	},
 }
@@ -1176,8 +1187,12 @@ export default {
 <!-- TODO: so this whole dataset will be stored in a local database... sqlite? -->
 
 <template>
-	<a href="#workout" id="archiefTonenToggle">Archief tonen / verbergen</a>
-	<div id="workout-grid">
+	<button @click="toggleArchive" v-if="showWorkoutArchive">
+		Hide workout archive
+	</button>
+	<button @click="toggleArchive" v-else>Show workout archive</button>
+
+	<div id="workout-grid" :class=getWorkoutGridClass(showWorkoutArchive)>
 		<div id="curdatenu"></div>
 		<WorkoutBodyItems v-for="datum of itemList" :item="datum" :key="datum" />
 	</div>

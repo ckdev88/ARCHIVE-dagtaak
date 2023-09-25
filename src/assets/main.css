@@ -64,10 +64,13 @@ td {
 .archive {
 	display: none;
 }
+
 .archive.show{
 	display:block
 }
-
+#workout-grid.hideArchive .workout-dag.archief{
+display:none;}
+#workout-grid.showArchive .workout-dag.archief{display:block;}
 .time {
 	color: var(--white);
 	font-weight: bold;

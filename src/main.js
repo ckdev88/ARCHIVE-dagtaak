@@ -67,20 +67,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 	currentDateNum(1, 1, 1)
 
-	function workoutArchive() {
-		var breakit
-
-		document.querySelectorAll('.workout-dag').forEach(function(i) {
-			if (breakit === undefined) {
-				i.classList.add('archive')
-				if (i.classList.contains('vandaag')) {
-					i.classList.remove('archive')
-					breakit = 1
-				}
-			}
-		})
-	}
-	workoutArchive()
 
 	function scrollToHash(hashName) {
 		setTimeout(function() {
@@ -88,31 +74,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			console.log('scrolled')
 		}, 0)
 	}
-
-	// function archiefTonenToggle(){ // break onclick below and functions apart SOLID
-	document.getElementById('archiefTonenToggle').onclick = function() {
-		var toon = 0
-		var verberg = 0
-		document.querySelectorAll('.archive').forEach(function(i) {
-			if (i.classList.contains('show')) {
-				i.classList.remove('show')
-				verberg = 1
-				toon = 0
-			} else {
-				i.classList.add('show')
-				verberg = 0
-				toon = 1
-			}
-		})
-		if (verberg === 1) {
-			console.log('verbergen')
-		}
-		if (toon === 1) {
-			console.log('tonen')
-			scrollToHash('workout-' + (currentDateNum() - 1))
-		}
-	}
-	// }
 
 	function currentTime() {
 		let current = new Date().toLocaleTimeString(localeCode, { // TODO: make times global and defined once total
