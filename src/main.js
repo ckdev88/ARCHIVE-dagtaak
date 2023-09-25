@@ -18,20 +18,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		}
 	}
 
-	/*document.getElementById('toggleNav').onclick = function () {
-	// Get the DOM reference
-	var asideId = document.getElementById("aside");
-	// Toggle
-	if(asideId.style.display == "none"){
-	  asideId.style.display = "block";
-	}
-	else{
-	  asideId.style.display = "none";
-	}
-  }*/
-
 	function currentDate(ret = 0) {
-		const dateObj = current
+		const dateObj = current// TODO: remove/replace vars that arent read
+
 		const dateString = current.toLocaleString()
 		const monthNameShort = current.toLocaleString(localeCode, {
 			month: 'short',
@@ -51,7 +40,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		}
 	}
 
-	function currentDateNum(ret = 1, log = 0, inner = 0) {
+	function currentDateNum(ret = 1, log = 0, inner = 0) {// TODO: remove/replace vars that arent read
+
 		const yearNum = current.toLocaleString(localeCode, { year: 'numeric' })
 		const monthNum = current
 			.toLocaleString(localeCode, { month: 'numeric' })
@@ -60,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			.toLocaleString(localeCode, { day: 'numeric' })
 			.padStart(2, '0')
 
-		var date = new Date()
+		var date = new Date() // TODO: remove/replace vars that arent read
 		const dateOutput = yearNum + monthNum + dayNum
 
 		if (log === 1) {
@@ -99,7 +89,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		}, 0)
 	}
 
-	// function archiefTonenToggle(){
+	// function archiefTonenToggle(){ // break onclick below and functions apart SOLID
 	document.getElementById('archiefTonenToggle').onclick = function() {
 		var toon = 0
 		var verberg = 0
@@ -125,7 +115,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	// }
 
 	function currentTime() {
-		let current = new Date().toLocaleTimeString(localeCode, {
+		let current = new Date().toLocaleTimeString(localeCode, { // TODO: make times global and defined once total
 			hour: '2-digit',
 			minute: '2-digit',
 
@@ -146,7 +136,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	currentTime(current)
 
 	function currentTimeHighlight() {
-		let current = new Date().toLocaleTimeString(localeCode, {
+		let current = new Date().toLocaleTimeString(localeCode, {// TODO: make times global and defined once total
+
 			hour: '2-digit',
 			minute: '2-digit',
 			timeZone: 'America/Argentina/Buenos_Aires',
