@@ -141,33 +141,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		/*-- */
 		let klein = current.replace(':', '')
 		let wat = klein.substring(0, 4)
-
-		//          if(document.getElementById("daytrade-timing-"+wat) !== null) {
-		if (document.getElementById('daytrade-timing-1350-1405') !== null) {
-			let divklein = document.getElementById('daytrade-timing-1350-1405')
-			//                        console.log(divklein);
-			//                        let divkleinwat = divklein.substring(16);
-			//                        console.log("divkleinwat: "+divkleinwat);
-		} else {
-			//console.log('bestaat niet 1');
-			console.log('nu minuten:' + wat)
-			let divklein = document.getElementById('daytrade-timing-' + wat)
-		}
-		/*-- */
-
-		//          console.log(wat);
-		//          console.log(document.getElementById("daytrade-timing-1330"));
-		//          if(wat > )
-		//          if(document.getElementById("daytrade-timing-"+wat) !== null){
-
-		if (document.getElementById('daytrade-timing-' + wat) !== null) {
-			document
-				.getElementById('daytrade-timing-' + wat)
-				.classList.add('highlight')
-			//                        console.log('bestaat');
-		} else {
-			//                        console.log('bestaat niet');
-		}
 	}
 	currentDate()
 	currentTime(current)
@@ -183,43 +156,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		let time = setTimeout(function() {
 			currentTimeHighlight(current)
 		}, 60000)
-
-		let nuMinuten = current.replace(':', '')
-		// console.log('nuMinuten:'+nuMinuten);
-		let nuMinuten2 = '1400'
-		console.log('nuMinuten2:' + nuMinuten2)
-		let idtest = 'daytrade-timing-1350-1405'
-		let idtestVan = idtest.substring(16, 20)
-		console.log('idtestVan:' + idtestVan)
-		let idtestTot = idtest.substring(21)
-		console.log('idtestTot:' + idtestTot)
-		// console.log("divkleinwat: "+divkleinwat);
-
-		// if(document.getElementById("daytrade-timing-"+wat) !== null) {
-		if (document.getElementById('daytrade-timing-1350-1405') !== null) {
-			let divklein = document.getElementById('daytrade-timing-1350-1405')
-			// console.log(divklein);
-			// let divkleinwat = divklein.substring(16);
-			// console.log("divkleinwat: "+divkleinwat);
-		} else {
-			//console.log('bestaat niet 1');
-			console.log('nu minuten:' + nuMinuten2)
-			let divklein = document.getElementById('daytrade-timing-' + nuMinuten2)
-		}
-
-		// console.log(wat);
-		// console.log(document.getElementById("daytrade-timing-1330"));
-		// if(wat > )
-		// if(document.getElementById("daytrade-timing-"+wat) !== null){
-
-		if (document.getElementById('daytrade-timing-' + nuMinuten2) !== null) {
-			document
-				.getElementById('daytrade-timing-' + nuMinuten2)
-				.classList.add('highlight')
-			// console.log('bestaat 2');
-		} else {
-			// console.log('bestaat niet 2');
-		}
 	}
 	currentTimeHighlight(current)
 })
