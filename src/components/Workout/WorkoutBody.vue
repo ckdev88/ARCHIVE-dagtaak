@@ -1019,7 +1019,6 @@ export default {
 				},
 			],
 			showWorkoutArchive: true,
-			curdate: 20220822
 		}
 	},
 	methods: {
@@ -1051,7 +1050,8 @@ export default {
 
 	<div id="workout-grid" :class="getWorkoutGridClass(showWorkoutArchive)">
 		<div id="curdatenu"></div>
-		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="item.datum" :curdate="getCurrentDateInt()" />
+		{{ curdate = getCurrentDateInt() }}
+		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="item.datum" :curdate="curdate" />
 	</div>
 	<div style="display: none"></div>
 </template>
