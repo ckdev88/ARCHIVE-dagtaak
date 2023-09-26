@@ -2,19 +2,12 @@
 export default {
 	props: {
 		item: Object,
+		curdate: Number,
 	},
 	methods: {
-		getCurrentDateInt() {
-			let currentDate = new Date()
-			return Number(
-				currentDate.getFullYear() +
-				(currentDate.getMonth() + 1).toString().padStart(2, '0') +
-				currentDate.getDate().toString().padStart(2, '0')
-			)
-		},
-		getWorkoutClassList(nudate, datum) {
-			if (Number(nudate) > Number(datum)) return 'workout-dag archief'
-			else if (Number(nudate) === Number(datum)) return 'workout-dag vandaag'
+		getWorkoutClassList(curdate, datum) {
+			if (Number(curdate) > Number(datum)) return 'workout-dag archief'
+			else if (Number(curdate) === Number(datum)) return 'workout-dag vandaag'
 			return 'workout-dag'
 		},
 	},
@@ -22,7 +15,7 @@ export default {
 </script>
 
 <template>
-	<div :class="getWorkoutClassList(getCurrentDateInt(), item.datum)" :id="'workout-' + item.datum">
+	<div :class="getWorkoutClassList(curdate, item.datum)" :id="'workout-' + item.datum">
 		<h3>
 			<span class="datum">{{ item.datum }}</span>
 			<a :name="'workout-' + item.datum"></a>

@@ -191,9 +191,6 @@ export default {
 					],
 				},
 				{
-					datum: 20220821,
-				},
-				{
 					datum: 20220822,
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
@@ -356,7 +353,7 @@ export default {
 					],
 				},
 				{
-					datum: 20220930,
+					datum: 20220830,
 					oefeningen: [
 						{ oefening: 'onderrug', reps: 50, sets: 2 },
 						{ oefening: 'schouders simpel', reps: 50, sets: 4 },
@@ -991,7 +988,7 @@ export default {
 					],
 				},
 				{
-					datum: 20230925,
+					datum: 20230926,
 					oefeningen: [
 						{
 							oefening: '', // TODO: on current day, select/option field, day passed = readonly
@@ -1006,7 +1003,7 @@ export default {
 					],
 				},
 				{
-					datum: 20230926,
+					datum: 20230927,
 					oefeningen: [
 						{
 							oefening: '', // TODO: on current day, select/option field, day passed = readonly
@@ -1022,9 +1019,18 @@ export default {
 				},
 			],
 			showWorkoutArchive: true,
+			curdate: 20220822
 		}
 	},
 	methods: {
+		getCurrentDateInt() {
+			let currentDate = new Date()
+			return Number(
+				currentDate.getFullYear() +
+				(currentDate.getMonth() + 1).toString().padStart(2, '0') +
+				currentDate.getDate().toString().padStart(2, '0')
+			)
+		},
 		toggleArchive() {
 			this.showWorkoutArchive = !this.showWorkoutArchive
 		},
@@ -1045,7 +1051,7 @@ export default {
 
 	<div id="workout-grid" :class="getWorkoutGridClass(showWorkoutArchive)">
 		<div id="curdatenu"></div>
-		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="datum" />
+		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="item.datum" :curdate="getCurrentDateInt()" />
 	</div>
 	<div style="display: none"></div>
 </template>
