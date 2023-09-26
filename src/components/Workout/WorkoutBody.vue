@@ -1022,14 +1022,6 @@ export default {
 		}
 	},
 	methods: {
-		getCurrentDateInt() {
-			let currentDate = new Date()
-			return Number(
-				currentDate.getFullYear() +
-				(currentDate.getMonth() + 1).toString().padStart(2, '0') +
-				currentDate.getDate().toString().padStart(2, '0')
-			)
-		},
 		toggleArchive() {
 			this.showWorkoutArchive = !this.showWorkoutArchive
 		},
@@ -1037,6 +1029,16 @@ export default {
 			if (showWorkoutArchive) return 'showArchive'
 			return 'hideArchive'
 		},
+	},
+	computed: {
+		currentDateInt() {
+			let currentDate = new Date()
+			return Number(
+				currentDate.getFullYear() +
+				(currentDate.getMonth() + 1).toString().padStart(2, '0') +
+				currentDate.getDate().toString().padStart(2, '0')
+			)
+		}
 	},
 }
 </script>
@@ -1050,8 +1052,7 @@ export default {
 
 	<div id="workout-grid" :class="getWorkoutGridClass(showWorkoutArchive)">
 		<div id="curdatenu"></div>
-		{{ curdate = getCurrentDateInt() }}
-		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="item.datum" :curdate="curdate" />
+		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="item.datum" :curdate="currentDateInt" />
 	</div>
 	<div style="display: none"></div>
 </template>
