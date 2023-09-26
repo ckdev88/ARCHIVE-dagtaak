@@ -3,13 +3,13 @@
 a,
 .green {
 	text-decoration: none;
-	color: hsla(400, 100%, 37%, 1);
+	color: hsla(120, 100%, 50%, 1);
 	transition: 0.2s;
 }
 
 @media (hover: hover) {
 	a:hover {
-		background-color: hsla(400, 100%, 37%, 0.2);
+		background-color: hsla(120, 100%, 50%, 0.2);
 	}
 }
 
@@ -59,18 +59,23 @@ td:first-child {
 td {
 	border-top: 1px solid #333;
 }
-
+button {
+	cursor: pointer;
+}
 .hide,
 .archive {
 	display: none;
 }
 
-.archive.show{
-	display:block
+.archive.show {
+	display: block;
 }
-#workout-grid.hideArchive .workout-dag.archief{
-display:none;}
-#workout-grid.showArchive .workout-dag.archief{display:block;}
+#workout-grid.hideArchive .workout-dag.archief {
+	display: none;
+}
+#workout-grid.showArchive .workout-dag.archief {
+	display: block;
+}
 .time {
 	color: var(--white);
 	font-weight: bold;
@@ -197,11 +202,11 @@ display:none;}
 	padding: 1rem 0;
 	border-bottom: 1px dotted white;
 }
-.workout-dag label{
-	cursor:pointer
+.workout-dag label {
+	cursor: pointer;
 }
-.workout-dag label:hover{
-	background-color:var(--color-background-soft)
+.workout-dag label:hover {
+	background-color: var(--color-background-soft);
 }
 .badge {
 	background: green;
@@ -209,9 +214,9 @@ display:none;}
 	padding: 0 0.2em;
 	border-radius: 0.2em;
 }
-.dagindeling-item{
-		border-top:1px dotted var(--c-black-mute);
+.dagindeling-item {
+	border-top: 1px dotted var(--c-black-mute);
 }
-.specs{
-	padding-left:1em;
+.specs {
+	padding-left: 1em;
 }
