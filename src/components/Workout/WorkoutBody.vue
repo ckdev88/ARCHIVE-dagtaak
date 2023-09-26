@@ -1045,7 +1045,7 @@ export default {
 
 	<div id="workout-grid" :class="getWorkoutGridClass(showWorkoutArchive)">
 		<div id="curdatenu"></div>
-		<WorkoutBodyItems v-for="datum of itemList" :item="datum" :key="datum" />
+		<WorkoutBodyItems v-for="item of itemList" :item="item" :key="datum" />
 	</div>
 	<div style="display: none"></div>
 </template>
