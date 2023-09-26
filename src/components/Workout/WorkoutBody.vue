@@ -1,6 +1,5 @@
 <script>
 import WorkoutBodyItems from './WorkoutBodyItem.vue'
-import * as script from '../../../src/main.js'
 export default {
 	components: { WorkoutBodyItems },
 	data() {
