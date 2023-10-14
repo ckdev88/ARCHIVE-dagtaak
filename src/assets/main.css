@@ -20,8 +20,6 @@ a,
 	}
 }
 
-/* ----------------------------------------------------------------- */
-
 article {
 	background-color: var(--bg-color-article);
 	padding: 0.5rem 0;
@@ -116,7 +114,6 @@ button {
 	background-color: var(--color-background-soft);
 	border-right: 1px solid #444;
 }
-
 #sidenav li {
 	padding: 0.1em 0;
 }
@@ -139,28 +136,24 @@ button {
 	margin-left: 12rem;
 	z-index: 2;
 }
-
-#aside.hidden #sidenav {
+.hidden #sidenav {
 	width: 0;
 	padding-left: 0;
 }
-
-#aside.hidden #toggleNav {
+.hidden #toggleNav {
 	transform: rotate(180deg);
 	margin-left: 0.8rem;
 	background-color: var(--color-background-soft);
 }
-#aside.hidden + main {
+.hidden + main {
 	margin-left: 3rem;
 }
-#aside.hidden ul {
+.hidden ul,.hidden ul {
 	display: none;
 }
-
-#sidenav.hidden ul {
+.hidden ul {
 	display: none;
 }
-
 #nu {
 	position: fixed;
 	top: 0;
@@ -173,16 +166,12 @@ button {
 	background-color: var(--color-background-mute);
 	color: var(--font-color);
 }
-
-#klok,
-#datum {
-}
-
 #datum {
 	text-align: justify;
 }
 #klok {
-	font-size: 2em;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 #workout-grid {

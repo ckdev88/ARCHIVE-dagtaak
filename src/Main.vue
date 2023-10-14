@@ -5,12 +5,14 @@ import Workout from './components/Workout.vue'
 // import MainItem from './components/MainItem.vue'
 import Coding from './components/Sections/Coding.vue'
 import Links from './components/Links.vue'
+import Feed from './components/Feed.vue'
 </script>
 
 <template>
 	<Klok />
 	<Dagindeling />
 	<Coding />
-	<Workout />
+	<!-- <Workout /> -->
 	<Links />
+	<Feed />
 </template>

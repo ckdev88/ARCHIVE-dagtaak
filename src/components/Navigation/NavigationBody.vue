@@ -26,6 +26,11 @@ export default {
 					link: '#coding',
 					tekst: 'coding',
 				},
+				{
+				id:3,
+				link:'#feed',
+				tekst:'feed',
+				}
 			],
 		}
 	},

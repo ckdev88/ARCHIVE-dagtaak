@@ -1,4 +1,4 @@
-<script setup>
+<script>
 import WorkoutBodyItems from './Workout/WorkoutBody.vue'
 </script>
 <template>

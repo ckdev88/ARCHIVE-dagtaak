@@ -35,9 +35,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		const dateOutput = date.toLocaleDateString([localeCode], optionsDate)
 
 		document.getElementById('datum').innerHTML = dateOutput
-		if (ret === 1) {
-			console.log('dateOutput: ' + dateOutput)
-		}
 	}
 
 	function currentDateNum(ret = 1, log = 0, inner = 0) {// TODO: remove/replace vars that arent read
@@ -53,9 +50,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		var date = new Date() // TODO: remove/replace vars that arent read
 		const dateOutput = yearNum + monthNum + dayNum
 
-		if (log === 1) {
-			console.log('dateOutput: ' + dateOutput)
-		}
 		if (document.getElementById('workout-' + dateOutput) !== null) {
 			var ele = document.getElementById('workout-' + dateOutput)
 			ele.classList.add('vandaag')
@@ -67,13 +61,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 	currentDateNum(1, 1, 1)
 
-
-	function scrollToHash(hashName) {
-		setTimeout(function() {
-			location.hash = '#' + hashName
-			console.log('scrolled')
-		}, 0)
-	}
 
 	function currentTime() {
 		let current = new Date().toLocaleTimeString(localeCode, { // TODO: make times global and defined once total
@@ -96,18 +83,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	currentDate()
 	currentTime(current)
 
-	function currentTimeHighlight() {
-		let current = new Date().toLocaleTimeString(localeCode, {// TODO: make times global and defined once total
-
-			hour: '2-digit',
-			minute: '2-digit',
-			timeZone: 'America/Argentina/Buenos_Aires',
-		})
-
-		document.getElementById('klok').innerText = current
-		let time = setTimeout(function() {
-			currentTimeHighlight(current)
-		}, 60000)
-	}
-	currentTimeHighlight(current)
 })
