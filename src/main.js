@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 
 	function currentDate(ret = 0) {
-		const dateObj = current// TODO: remove/replace vars that arent read
+		const dateObj = current // TODO: remove/replace vars that arent read
 
 		const dateString = current.toLocaleString()
 		const monthNameShort = current.toLocaleString(localeCode, {
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
 		document.getElementById('datum').innerHTML = dateOutput
 	}
 
-	function currentDateNum(ret = 1, log = 0, inner = 0) {// TODO: remove/replace vars that arent read
-
+	function currentDateNum(ret = 1, log = 0, inner = 0) {
+		// TODO: remove/replace vars that arent read
 		const yearNum = current.toLocaleString(localeCode, { year: 'numeric' })
 		const monthNum = current
 			.toLocaleString(localeCode, { month: 'numeric' })
@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
 			.toLocaleString(localeCode, { day: 'numeric' })
 			.padStart(2, '0')
 
-		var date = new Date() // TODO: remove/replace vars that arent read
 		const dateOutput = yearNum + monthNum + dayNum
 
 		if (document.getElementById('workout-' + dateOutput) !== null) {
@@ -61,9 +60,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 	currentDateNum(1, 1, 1)
 
-
 	function currentTime() {
-		let current = new Date().toLocaleTimeString(localeCode, { // TODO: make times global and defined once total
+		let current = new Date().toLocaleTimeString(localeCode, {
+			// TODO: make times global and defined once total
 			hour: '2-digit',
 			minute: '2-digit',
 
@@ -82,5 +81,4 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	}
 	currentDate()
 	currentTime(current)
-
 })
